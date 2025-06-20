@@ -19,3 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+function toggleSidebar() {
+  document.querySelector('.page-container').classList.toggle('collapsed');
+}
+
+function toggleSidebar() {
+  const container = document.querySelector('.page-container');
+  const toggleBtn = document.querySelector('.sidebar-toggle');
+
+  container.classList.toggle('collapsed');
+
+  if (container.classList.contains('collapsed')) {
+    toggleBtn.textContent = '»';
+  } else {
+    toggleBtn.textContent = '☰';
+  }
+}
+
+

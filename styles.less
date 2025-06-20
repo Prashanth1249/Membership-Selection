@@ -135,6 +135,9 @@ html, body {
     padding: 0;
     overflow: hidden;
   }
+  .sidebar-toggle {
+    display: none;
+    }
 
   .page-container {
     height: 100vh;
@@ -252,3 +255,34 @@ html, body {
     margin: 0; 
   }
 }
+
+
+@media (min-width: 769px) {
+  .sidebar-toggle {
+    display: block;
+    font-size: 24px; 
+  cursor: pointer;
+  user-select: none;
+  }
+
+  .page-container.collapsed .left-column {
+    width: 60px;
+    overflow: hidden;
+  }
+
+  .page-container.collapsed .plan-name {
+    display: none;
+  }
+
+  .page-container.collapsed .side-info {
+    visibility: hidden;
+  }
+
+  .page-container.collapsed .main-description {
+    flex: 1 1 auto;
+  }
+}
+
+
+
+
